@@ -1,0 +1,8 @@
+%h2 Timeout
+%p operation of importing is stopped because it took too much time (over 10 minutes)
+- if @imported
+  %p
+    = @imported
+    transactions loaded successfully
+%p
+  = link_to "Home", transactions_path, class: 'btn btn-default'

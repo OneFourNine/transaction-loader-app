@@ -1,0 +1,29 @@
+body {
+  padding: 10px 20px;
+}
+
+p {
+  margin-top: 3px;
+  margin-bottom: 3px
+}
+
+.new_transaction {
+  padding-top: 20px;
+}
+
+.file_upload {
+  display: inline-block;
+  float: left;
+}
+
+.transaction_excel_file {
+  display: inline-block;
+}
+
+.import_button {
+  font-size: 12px;
+}
+
+.form-group.transaction_excel_file {
+  width: 260px;
+}

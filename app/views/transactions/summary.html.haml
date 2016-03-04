@@ -1,0 +1,9 @@
+%p
+  = "Out of #{pluralize(transaction_presenter.mambu_transactions_count, 'transaction')}, "
+  = transaction_presenter.successful_transactions_count
+  \ were successfully processed and
+  = transaction_presenter.failure_transactions_count
+  \ failed. Please download the results.
+%p
+  = link_to "Download the transaction file", file_download_transaction_path(transaction), class: 'btn btn-success'
+  = link_to "Home", transactions_path, class: 'btn btn-default'

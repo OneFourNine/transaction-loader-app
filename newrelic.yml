@@ -1,0 +1,24 @@
+common: &default_settings
+  license_key: 0797ce8b6b2f8930a5f136ff0d6379dd6a53ec65
+  app_name: Transaction load
+  log_level: info
+
+
+development:
+  <<: *default_settings
+  app_name: Transaction load (Development)
+  developer_mode: true
+
+test:
+  <<: *default_settings
+  monitor_mode: false
+
+staging:
+  <<: *default_settings
+  app_name: Transaction load (Staging)
+
+production:
+  <<: *default_settings
+
+sandbox:
+  <<: *default_settings

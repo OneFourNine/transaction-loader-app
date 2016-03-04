@@ -1,0 +1,16 @@
+<app>
+<id>MambuApp5ef8bf9f</id>
+<name>Transaction Loader</name>
+<provider>Mambu GmbH</provider>
+<description>Mockup Transactions Loader App</description>
+<permission>MAKE_DEPOSIT</permission>
+<permission>MAKE_WITHDRAWAL</permission>
+<permission>VIEW_USER_DETAILS</permission>
+<extensionpoint>
+    <location>EXTENSION_MENU</location>
+    <label>Transaction Upload from Excel</label>
+    <installUrl>https://transaction-load.staging.devguru.co/</installUrl>
+    <uninstallUrl>https://transaction-load.staging.devguru.co/</uninstallUrl>
+    <url>https://transaction-load.staging.devguru.co/payload</url>
+</extensionpoint>
+</app>

@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    attributes:
+      transaction:
+        excel_file: "file"
+      file_transaction:
+        t_type: "type"
+  errors:
+    messages:
+      extension_white_list_error: "allowed types are %{allowed_types}, your file has %{extension} extension"

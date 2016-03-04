@@ -1,0 +1,7 @@
+%p
+  = pluralize(transaction_presenter.mambu_transactions_count, 'transaction')
+  \ to be imported
+
+.row.col-sm-4
+  .form-group
+    = render 'auth_form', transaction: transaction

@@ -1,0 +1,13 @@
+defaults: &defaults
+  s3_bucket: ''
+  mambu_app_key: ''
+
+development:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+  ga_id: ''
+
+production:
+  <<: *defaults

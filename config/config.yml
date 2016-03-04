@@ -1,0 +1,21 @@
+defaults: &defaults
+  s3_bucket: 'transaction-load'
+  secret_key_base: 'default_secret_key_base'
+  mambu_app_key: 'key'
+  install_file_location: '/install.xml'
+
+development:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+  ga_id: 'UA-64379631-1'
+
+production:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+sandbox:
+  <<: *defaults

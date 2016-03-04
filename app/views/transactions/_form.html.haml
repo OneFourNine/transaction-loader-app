@@ -1,0 +1,5 @@
+= simple_form_for transaction, html: { multipart: true } do |f|
+  .file_upload
+    = f.input :excel_file, as: :file, label: false, class: 'btn'
+    = f.input :excel_file_cache, as: :hidden
+    = f.button :submit, "Submit", class: "import_button", data: { disable_with: 'Submitting...' }

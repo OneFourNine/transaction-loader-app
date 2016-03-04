@@ -1,0 +1,6 @@
+= simple_form_for :authentication, url: start_import_transaction_path(transaction), method: 'post' do |f|
+  %p.help-block Please fill your username and password to proceed
+  .row.col-sm-8
+    = f.input :username, required: true, input_html: { class: 'username_input' }
+    = f.input :password, required: true, input_html: { class: 'pass_input' }
+    = f.button :submit, 'Start import', class: 'pass_submit', data: { disable_with: 'Importing...' }
